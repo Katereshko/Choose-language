@@ -1,38 +1,78 @@
+html, body{
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  background-color: #F0ECE5;
+}
+
+h1, h2, h3, p, button{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #525CEB;
+}
+
+h3{
+  color: #0C356A;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container{
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: #525CEB;
+  color: #fff;
+  padding: 20px 30px;
+  margin: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.block{
+  margin-bottom: 10px;
 }
+
+.languages_count{
+  background-color: #8CABFF;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+.btn-remove{
+  padding: 5px 10px;
+}
+
+.btn-delete{
+  padding: 5px 50px;
+}
+
+.container_horizontal{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.list_item_vertical{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
